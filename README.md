@@ -21,7 +21,7 @@
 
 ## 🎯 Overview
 
-This project demonstrates the implementation of a complete Hybrid Identity and Access Management solution for **The Merchandise Vault**, showcasing enterprise security best practices using Microsoft Azure cloud services.
+This project demonstrates the implementation of a comprehensive Hybrid Identity and Access Management solution for **The Merchandise Vault**, showcasing best practices in enterprise security using Microsoft Azure cloud services.
 
 ### Business Objectives
 
@@ -257,11 +257,13 @@ Enabled **Self-Service Password Reset (SSPR)** requiring 2 verification methods,
 
 #### Custom Domain Configuration
 <img width="1710" height="1107" alt="Screenshot 2025-12-05 at 12 11 30 AM" src="https://github.com/user-attachments/assets/82d629ed-1ff4-4622-b252-6518aefe4f7b" />
-*Description: Custom domain verification in Microsoft Entra admin center*
+
+Description: Custom domain verification in Microsoft Entra admin center
 
 #### Tenant Overview
 <img width="1710" height="1107" alt="Screenshot 2025-12-05 at 12 19 29 AM" src="https://github.com/user-attachments/assets/2603ed12-7311-49e9-9998-ff73cf745839" />
-*Description: TechCorp tenant overview showing license and configuration status*
+
+Description: TechCorp tenant overview showing license and configuration status
 
 ---
 
@@ -269,140 +271,170 @@ Enabled **Self-Service Password Reset (SSPR)** requiring 2 verification methods,
 
 #### Security Groups
 <img width="1710" height="1107" alt="Screenshot 2025-12-03 at 5 12 45 PM" src="https://github.com/user-attachments/assets/ff351996-1cba-4c8f-984c-ea98a11c6954" />
-*Description: Security groups created for RBAC assignments*
+
+Description: Security groups created for RBAC assignments
 
 #### Dynamic Group Configuration
 <img width="1710" height="1107" alt="Screenshot 2025-12-03 at 5 00 39 PM" src="https://github.com/user-attachments/assets/e96b36ab-1656-4685-b2f7-658f9d96aba3" />
-*Description: Dynamic membership rules for All-Employees group*
+
+Description: Dynamic membership rules for All-Employees group
 
 #### Test Users
-<!-- Add your screenshot here -->
-![Test Users](screenshots/02-users-groups/test-users.png)
-*Description: Test users created across different departments*
+<img width="1710" height="1107" alt="Screenshot 2025-12-05 at 2 03 52 PM" src="https://github.com/user-attachments/assets/7a5e12b2-0e36-43c8-94b4-e21b678f095e" />
+
+Description: Test users created across different departments
+
+### Assign license to users and groups
+
+<img width="1710" height="1107" alt="Screenshot 2025-12-05 at 2 39 10 PM" src="https://github.com/user-attachments/assets/32278117-74c4-4d65-9c9f-3a9a48d1f90c" />
+<img width="1710" height="1107" alt="Screenshot 2025-12-05 at 2 39 53 PM" src="https://github.com/user-attachments/assets/c48513c4-6f98-4ba2-82e2-f8a20ef2c437" />
+
+Description: Users and groups assigned P2 license on Microsoft 365
 
 ---
 
 ### Phase 3: Administrative Units
 
 #### Administrative Units Overview
-<!-- Add your screenshot here -->
-![Admin Units](screenshots/03-admin-units/admin-units-overview.png)
-*Description: Regional administrative units for delegated management*
+<img width="1710" height="1107" alt="Screenshot 2025-12-05 at 8 47 08 PM" src="https://github.com/user-attachments/assets/5add8c15-c403-4ae8-9931-3f98d901fb7c" />
+
+Description: Administrative Units across continents 
 
 #### Scoped Role Assignment
-<!-- Add your screenshot here -->
-![Scoped Admin](screenshots/03-admin-units/scoped-admin-assignment.png)
-*Description: User Administrator role scoped to US administrative unit*
+<img width="1710" height="1107" alt="Screenshot 2025-12-05 at 8 43 45 PM" src="https://github.com/user-attachments/assets/0abd57c7-f8ea-4da6-bc0a-9f0f462afe96" />
+
+Description: User Administrator role scoped to US administrative unit
+
+<img width="1710" height="1107" alt="Screenshot 2025-12-05 at 8 56 02 PM" src="https://github.com/user-attachments/assets/42cb6c56-846b-4819-b3ee-f94dc40d2175" />
+
+Description: Restricted Adminstrative Unit
+
+<img width="1710" height="1107" alt="Screenshot 2025-12-05 at 8 56 38 PM" src="https://github.com/user-attachments/assets/38e0fed9-ab75-4b9f-aeee-273c6eb16e6e" />
+
+Description: Restricted Administrative unit assigned to the Chief Technology Officer
 
 ---
 
 ### Phase 4: RBAC Implementation
 
 #### Subscription-Level RBAC
-<!-- Add your screenshot here -->
-![Subscription RBAC](screenshots/04-rbac/subscription-rbac.png)
-*Description: Role assignments at the subscription level*
+<img width="1710" height="1107" alt="Screenshot 2025-12-08 at 3 11 10 PM" src="https://github.com/user-attachments/assets/01e95f09-c5ff-4967-9fa3-5534da6abccc" />
+
+Description: Role assignments at the subscription level
 
 #### Resource Group Permissions
-<!-- Add your screenshot here -->
-![RG Permissions](screenshots/04-rbac/resource-group-rbac.png)
-*Description: Granular permissions on RG-Finance resource group*
+<img width="1710" height="1107" alt="Screenshot 2025-12-05 at 9 18 02 PM" src="https://github.com/user-attachments/assets/048ce545-81d1-4585-a381-86d174720a5e" />
+
+Description: Resource Groups
+
+
+<img width="1710" height="1107" alt="Screenshot 2025-12-08 at 2 52 16 PM" src="https://github.com/user-attachments/assets/2460bb64-b013-4228-96be-535d06c69831" />
+
+Description: Granular permissions on RG-Finance resource group
 
 #### Custom Role Definition
-<!-- Add your screenshot here -->
-![Custom Role](screenshots/04-rbac/custom-role-vm-operator.png)
-*Description: Custom VM Operator role for operations team*
+<img width="1710" height="1107" alt="Screenshot 2025-12-08 at 2 26 55 PM" src="https://github.com/user-attachments/assets/8b2f102a-31ef-4123-99db-c6f68b2da4cf" />
+
+Description: Custom role created
+
+<img width="1710" height="1107" alt="Screenshot 2025-12-08 at 4 17 22 PM" src="https://github.com/user-attachments/assets/00854ce5-bafe-4a49-9636-22487bb76eea" />
+
+Description: Custom VM Operator role for operations team
 
 ---
 
 ### Phase 5: Multi-Factor Authentication
 
 #### Authentication Methods
-<!-- Add your screenshot here -->
-![Auth Methods](screenshots/05-mfa/authentication-methods.png)
-*Description: MFA methods configured for the organization*
+<img width="1710" height="1107" alt="Screenshot 2025-12-08 at 8 21 57 PM" src="https://github.com/user-attachments/assets/aa582d9e-6e0e-4ff4-872f-e223e8b8b22b" />
+<img width="1710" height="1107" alt="Screenshot 2025-12-08 at 8 27 03 PM" src="https://github.com/user-attachments/assets/130bf02e-2cec-4f52-91d7-1374ceb6ae5f" />
+
+Description: MFA methods configured for the organization
+
+<img width="1710" height="1107" alt="Screenshot 2025-12-08 at 8 28 30 PM" src="https://github.com/user-attachments/assets/258b0d4e-785c-4b59-8961-928f1c359f79" />
+
+Description:FIDO2 security keys configuration
+
+<img width="1710" height="1107" alt="Screenshot 2025-12-08 at 8 30 40 PM" src="https://github.com/user-attachments/assets/72c0b579-1e7b-4c5c-ae4f-e1b9cc506b2a" />
+
+Description: SMS configuration
 
 #### Registration Campaign
-<!-- Add your screenshot here -->
-![MFA Campaign](screenshots/05-mfa/registration-campaign.png)
-*Description: MFA registration nudge configuration*
+<img width="1710" height="1107" alt="Screenshot 2025-12-08 at 8 40 49 PM" src="https://github.com/user-attachments/assets/5827dfa6-b771-41e9-9215-2da75a9bd2a6" />
+
+Description: MFA registration nudge configuration
 
 #### Number Matching
-<!-- Add your screenshot here -->
-![Number Matching](screenshots/05-mfa/number-matching.png)
-*Description: Number matching enabled to prevent MFA fatigue attacks*
+<img width="1710" height="1107" alt="Screenshot 2025-12-08 at 8 27 03 PM" src="https://github.com/user-attachments/assets/79c72120-de65-44fb-8ab0-5383bbe414a9" />
+
+Description: Number matching enabled to prevent MFA fatigue attacks
 
 ---
 
 ### Phase 6: Conditional Access
 
 #### Policy Overview
-<!-- Add your screenshot here -->
-![CA Policies](screenshots/06-conditional-access/policies-overview.png)
-*Description: All conditional access policies deployed*
+<img width="1710" height="1107" alt="Screenshot 2025-12-08 at 9 48 33 PM" src="https://github.com/user-attachments/assets/fe5ce278-e720-4ebb-ae33-0c5c1af1c4ca" />
+
+Description: All conditional access policies deployed
 
 #### MFA Policy Configuration
-<!-- Add your screenshot here -->
-![CA MFA Policy](screenshots/06-conditional-access/ca001-mfa-policy.png)
-*Description: CA001 - Require MFA for all users configuration*
+<img width="1710" height="1107" alt="Screenshot 2025-12-08 at 9 51 10 PM" src="https://github.com/user-attachments/assets/669efc03-a562-4f66-b70a-0d682079ed1c" />
+<img width="1710" height="1107" alt="Screenshot 2025-12-08 at 9 51 14 PM" src="https://github.com/user-attachments/assets/d0a65177-1e66-43bc-9eda-43584b5addf2" />
+
+Description:  Require MFA for all users configuration
 
 #### Block Legacy Authentication
-<!-- Add your screenshot here -->
-![Block Legacy Auth](screenshots/06-conditional-access/ca005-block-legacy.png)
-*Description: CA005 - Block legacy authentication protocols*
+<img width="1710" height="1107" alt="Screenshot 2025-12-08 at 9 54 36 PM" src="https://github.com/user-attachments/assets/59239b6c-d045-4822-a15b-537490d704d7" />
+
+Description: Block legacy authentication protocols
 
 #### Location-Based Policy
-<!-- Add your screenshot here -->
-![Location Policy](screenshots/06-conditional-access/location-based-policy.png)
-*Description: Named locations and geographic restrictions*
+<img width="1710" height="1107" alt="Screenshot 2025-12-08 at 9 57 33 PM" src="https://github.com/user-attachments/assets/35f2396e-6a16-4c6a-a8b8-37d04eb86a19" />
+
+Description: Named locations and geographic restrictions
 
 #### What If Analysis
-<!-- Add your screenshot here -->
-![What If](screenshots/06-conditional-access/what-if-analysis.png)
-*Description: Testing policy evaluation with What If tool*
+<img width="1710" height="1107" alt="Screenshot 2025-12-08 at 10 07 39 PM" src="https://github.com/user-attachments/assets/b7b2dc54-83b1-4941-a19f-4456d8ae4581" />
+
+Description: Testing policy evaluation with What If tool
 
 ---
 
 ### Phase 7: Privileged Identity Management
 
 #### PIM Dashboard
-<!-- Add your screenshot here -->
-![PIM Dashboard](screenshots/07-pim/pim-dashboard.png)
-*Description: Privileged Identity Management overview*
+<img width="1710" height="1107" alt="Screenshot 2025-12-08 at 10 45 03 PM" src="https://github.com/user-attachments/assets/2438192b-e55b-498c-8828-19455ffae309" />
+
+Description: Privileged Identity Management overview
 
 #### Eligible Role Assignments
-<!-- Add your screenshot here -->
-![Eligible Roles](screenshots/07-pim/eligible-assignments.png)
-*Description: Users eligible to activate privileged roles*
+<img width="1710" height="1107" alt="Screenshot 2025-12-08 at 11 27 44 PM" src="https://github.com/user-attachments/assets/c1dac86b-ea6d-46a1-b723-f2fc36720190" />
+
+Description: Users eligible to activate privileged roles
 
 #### Role Settings
-<!-- Add your screenshot here -->
-![PIM Settings](screenshots/07-pim/role-settings.png)
-*Description: Global Administrator role activation settings*
+<img width="1710" height="1107" alt="Screenshot 2025-12-08 at 11 29 54 PM" src="https://github.com/user-attachments/assets/cda4b051-16cf-4d69-a0e6-5285c94ec742" />
+<img width="1710" height="1107" alt="Screenshot 2025-12-08 at 11 30 03 PM" src="https://github.com/user-attachments/assets/363c6f1c-a110-4cb7-80cb-a06de767d1ad" />
 
-#### Activation Workflow
-<!-- Add your screenshot here -->
-![Activation](screenshots/07-pim/role-activation.png)
-*Description: User activating a privileged role with justification*
+Description: Global Administrator role activation settings
 
 ---
 
 ### Phase 8: Self-Service Password Reset
 
 #### SSPR Configuration
-<!-- Add your screenshot here -->
-![SSPR Config](screenshots/08-sspr/sspr-configuration.png)
-*Description: Self-service password reset settings*
+<img width="1710" height="1107" alt="Screenshot 2025-12-08 at 11 33 33 PM" src="https://github.com/user-attachments/assets/e61486ae-6ae9-4820-9a09-335ef46aaea1" />
+
+<img width="1710" height="1107" alt="Screenshot 2025-12-08 at 11 35 05 PM" src="https://github.com/user-attachments/assets/8d9c8c62-1fff-4983-afc0-398c590b7ddb" />
+
+Description: Self-service password reset settings
 
 #### Authentication Methods for SSPR
-<!-- Add your screenshot here -->
-![SSPR Methods](screenshots/08-sspr/sspr-auth-methods.png)
-*Description: Methods available for password reset verification*
+<img width="1710" height="1073" alt="Screenshot 2025-12-08 at 11 35 38 PM" src="https://github.com/user-attachments/assets/0ceeada9-1dec-4278-99ca-0fbd0ab8a753" />
 
-#### User Registration Experience
-<!-- Add your screenshot here -->
-![SSPR Registration](screenshots/08-sspr/user-registration.png)
-*Description: User security info registration portal*
+Description: Methods available for password reset verification
+
 
 ---
 
