@@ -195,13 +195,13 @@ This project demonstrates the implementation of a comprehensive Hybrid Identity 
 ### 🛠️ How I Built This
 
 ### Phase 1: Foundation Setup
-Started by configuring the Microsoft Entra ID tenant with a custom domain (`techcorp.com`) and setting baseline tenant security settings. Disabled user consent for applications and restricted guest access to maintain control over the directory.
+Started by configuring the Microsoft Entra ID tenant with a custom domain (`themerchandisevault`) and setting baseline tenant security settings. Disabled user consent for applications and restricted guest access to maintain control over the directory.
 
 ### Phase 2: Identity Structure
-Created a hierarchical group structure using security groups for each department (IT, Finance, Operations). Implemented **dynamic groups** with membership rules based on user attributes — for example, the `SG-All-Employees` group automatically includes all enabled member accounts.
+Created a hierarchical group structure using security groups for each department (IT, Finance, Operations). Implemented **dynamic groups** with membership rules based on user attributes — for example, the `GRP-All-Employees` group automatically includes all enabled member accounts.
 
 ### Phase 3: Administrative Delegation
-Set up **Administrative Units** for regional delegation (US, EU, APAC), allowing regional IT admins to manage only users within their geography. This follows the principle of least privilege for administrative access.
+Set up **Administrative Units** for regional delegation (US, EU,), allowing regional IT admins to manage only users within their geography. This follows the principle of least privilege for administrative access.
 
 ### Phase 4: RBAC Design
 Designed a tiered RBAC model:
@@ -217,15 +217,15 @@ Configured MFA with **Microsoft Authenticator** as the primary method and enable
 ### Phase 6: Conditional Access
 Built 7 layered policies following a defense-in-depth approach:
 
-| Layer | Policy | Purpose |
-|-------|--------|---------|
-| Baseline | CA001 | MFA for all users |
-| Geographic | CA002 | Block high-risk countries |
-| Device | CA003 | Require compliant devices for sensitive apps |
-| Network | CA004 | MFA outside corporate network |
-| Protocol | CA005 | Block legacy authentication |
-| Privileged | CA006 | Phishing-resistant MFA for admins |
-| Session | CA007 | Time-limited sessions for sensitive apps |
+| Layer | Purpose |
+|-------|--------|
+| Baseline |MFA for all users |
+| Geographic | Block high-risk countries |
+| Device | Require compliant devices for sensitive apps |
+| Network | MFA outside corporate network |
+| Protocol | Block legacy authentication |
+| Privileged | Phishing-resistant MFA for admins |
+| Session | Time-limited sessions for sensitive apps |
 
 Tested all policies in **Report-only mode** first using the What If tool before enforcement.
 
@@ -516,18 +516,18 @@ A break glass account is maintained for emergency scenarios:
 
 ### Test Cases Executed
 
-| Test ID | Description | Expected Result | Status |
-|---------|-------------|-----------------|--------|
-| TC01 | User sign-in with correct password | Success | ✅ Pass |
-| TC02 | MFA prompt outside corporate network | MFA shown | ✅ Pass |
-| TC03 | No MFA from trusted IP | No MFA | ✅ Pass |
-| TC04 | Legacy auth (IMAP) blocked | Blocked | ✅ Pass |
-| TC05 | Sign-in from high-risk country | Blocked | ✅ Pass |
-| TC06 | Developer create VM in RG-Development | Success | ✅ Pass |
-| TC07 | Developer create VM in RG-Production | Denied | ✅ Pass |
-| TC08 | Finance view Finance resources | Success | ✅ Pass |
-| TC09 | PIM role activation | Success | ✅ Pass |
-| TC10 | SSPR password reset | Success | ✅ Pass |
+| Description | Expected Result | Status |
+|---------|-------------|-----------------|
+User sign-in with correct password | Success | ✅ Pass |
+MFA prompt outside corporate network | MFA shown | ✅ Pass |
+No MFA from trusted IP | No MFA | ✅ Pass |
+Legacy auth (IMAP) blocked | Blocked | ✅ Pass |
+Sign-in from high-risk country | Blocked | ✅ Pass |
+Developer create VM in RG-Development | Success | ✅ Pass |
+Developer create VM in RG-Production | Denied | ✅ Pass |
+Finance view Finance resources | Success | ✅ Pass |
+PIM role activation | Success | ✅ Pass |
+SSPR password reset | Success | ✅ Pass |
 
 ---
 
