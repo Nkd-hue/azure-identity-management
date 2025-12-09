@@ -4,7 +4,7 @@
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Overview](#-overview)
 - [Architecture](#-architecture)
@@ -19,7 +19,7 @@
 
 ---
 
-## 🎯 Overview
+## Overview
 
 This project demonstrates the implementation of a comprehensive Hybrid Identity and Access Management solution for **The Merchandise Vault**, showcasing best practices in enterprise security using Microsoft Azure cloud services.
 
@@ -50,7 +50,7 @@ This project demonstrates the implementation of a comprehensive Hybrid Identity 
 
 ---
 
-## 🏗 Architecture
+##  Architecture
 
 ### High-Level Architecture Diagram
 
@@ -129,37 +129,37 @@ This project demonstrates the implementation of a comprehensive Hybrid Identity 
 
 ---
 
-## ✨ Features
+##  Features
 
-### 🔑 Identity Management
+###  Identity Management
 
 - **Custom Domain Integration** - Professional user identities with `@techcorp.com`
 - **User Lifecycle Management** - Automated provisioning and deprovisioning workflows
 - **Dynamic Groups** - Automatic group membership based on user attributes
 - **Administrative Units** - Regional delegation for US, EU, and APAC
 
-### 🛡️ Access Control
+### Access Control
 
 - **RBAC at Multiple Scopes** - Subscription, Resource Group, and Resource level permissions
 - **Custom Role Definitions** - Tailored roles like "VM Operator" for specific use cases
 - **Separation of Duties** - Finance resources isolated from IT direct access
 - **Least Privilege Principle** - Users receive minimum necessary permissions
 
-### 🔐 Authentication & Security
+### Authentication & Security
 
 - **Multi-Factor Authentication** - Microsoft Authenticator, FIDO2 keys, SMS backup
 - **Conditional Access** - 7 policies covering location, device, app, and risk conditions
 - **Legacy Auth Blocking** - Protection against password spray attacks
 - **Risk-Based Access** - Dynamic policy enforcement based on sign-in risk
 
-### ⚡ Privileged Access
+###  Privileged Access
 
 - **Just-in-Time Access** - Time-limited privilege activation via PIM
 - **Approval Workflows** - Manager approval for sensitive role activations
 - **Access Reviews** - Quarterly review of privileged role assignments
 - **Break Glass Account** - Emergency access with monitoring and alerts
 
-### 🔄 Self-Service Capabilities
+###  Self-Service Capabilities
 
 - **Password Reset** - Users can reset passwords without IT intervention
 - **MFA Registration** - Self-service enrollment with registration campaigns
@@ -167,7 +167,7 @@ This project demonstrates the implementation of a comprehensive Hybrid Identity 
 
 ---
 
-## 📦 Prerequisites
+## Prerequisites
 
 | Requirement | Details |
 |-------------|---------|
@@ -192,7 +192,7 @@ This project demonstrates the implementation of a comprehensive Hybrid Identity 
 
 ---
 
-### 🛠️ How I Built This
+###  How I Built This
 
 ### Phase 1: Foundation Setup
 Started by configuring the Microsoft Entra ID tenant with a custom domain (`themerchandisevault`) and setting baseline tenant security settings. Disabled user consent for applications and restricted guest access to maintain control over the directory.
@@ -251,7 +251,7 @@ Enabled **Self-Service Password Reset (SSPR)** requiring 2 verification methods,
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
 ### Phase 1: Microsoft Entra ID Setup
 
@@ -438,7 +438,7 @@ Description: Methods available for password reset verification
 
 ---
 
-## 📊 RBAC Matrix
+##  RBAC Matrix
 
 ### Subscription Level
 
@@ -466,7 +466,7 @@ Description: Methods available for password reset verification
 
 ---
 
-## 🔒 Conditional Access Policies
+##  Conditional Access Policies
 
 | Policy ID | Name | Target | Conditions | Controls |
 |-----------|------|--------|------------|----------|
@@ -480,7 +480,7 @@ Description: Methods available for password reset verification
 
 ---
 
-## 🛡️ Security Considerations
+##  Security Considerations
 
 ### Zero Trust Principles Applied
 
@@ -512,7 +512,7 @@ A break glass account is maintained for emergency scenarios:
 ---
 
 
-## 🧪 Testing & Validation
+##  Testing & Validation
 
 ### Test Cases Executed
 
