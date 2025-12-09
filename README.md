@@ -263,7 +263,7 @@ Description: Custom domain verification in Microsoft Entra admin center
 #### Tenant Overview
 <img width="1710" height="1107" alt="Screenshot 2025-12-05 at 12 19 29 AM" src="https://github.com/user-attachments/assets/2603ed12-7311-49e9-9998-ff73cf745839" />
 
-Description: TechCorp tenant overview showing license and configuration status
+Description: The Merchandise vault tenant overview showing license and configuration status
 
 ---
 
